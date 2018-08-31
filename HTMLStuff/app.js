@@ -27,9 +27,11 @@ function loadComedy() {
         console.log(element);
         var node = document.createElement("ul");
         if (element.Genre == "Comedy")
-          node.innerText =
-            "Title: " + element.MovieTitle + "\n" + " Genre: " + element.Genre;
+          node.innerText = "Title: " + element.MovieTitle + "\n" + " Genre: " + element.Genre;
+           
         document.getElementById("movies").appendChild(node);
       });
     }
   };
+xhttp.send();
+}
